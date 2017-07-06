@@ -2,7 +2,8 @@
     betaserver.py
     Leif Anderson 7/6/17
 '''
-from flask import Flask  # Import Flask to allow us to create our app.
+from flask import Flask, render_template
+                         # Import Flask to allow us to create our app.
 app = Flask(__name__)    # Global variable __name__ tells Flask whether or not we are running the file
                          # directly, or importing it as a module.
 @app.route('/')          # The "@" symbol designates a "decorator" which attaches the following
@@ -10,4 +11,11 @@ app = Flask(__name__)    # Global variable __name__ tells Flask whether or not w
                          # localhost:5000/ we will run the following "hello_world" function.
 def hello_world():
   return 'Hello World!'  # Return the string 'Hello World!' as a response.
+
+@app.route('/success')
+def success():
+    return render_template('success.html')
+
+
+
 app.run(debug=True)      # Run the app in debug mode.
