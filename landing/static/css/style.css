@@ -13,3 +13,16 @@ body {
   background-color: darkgrey;
   width: 976px;
 }
+
+#the-dojo {
+  width: 200px;
+}
+
+h1 {
+  display: inline-block;
+}
+
+p {
+  display: inline-block;
+  width: 400px;
+}

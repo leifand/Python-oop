@@ -17,7 +17,7 @@ def ninjas():
 
 @app.route('/dojos/new')
 def new_ninja():
-    pass
+    return render_template('dojo.html')
 
 # Run, server, run!
-app.run(Debug=True)
+app.run(debug=True)
