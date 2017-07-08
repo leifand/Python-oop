@@ -1,6 +1,6 @@
 '''
     bike.py
-    Leif Anderson 7/6/17
+    Leif Anderson 7/8/17
 '''
 
 class Bike(object):
@@ -9,24 +9,26 @@ class Bike(object):
         self.maxSpeed = maxSpeed
         self.totalMiles = 0
 
-    def displayinfo():
-        print "Price    : " + str(price)
-        print "Max Speed: " + str(maxSpeed)
-        print "Miles    : " + str(totalMiles)
+    def displayinfo(self):
+        print "Price    : " + str(self.price)
+        print "Max Speed: " + str(self.maxSpeed)
+        print "Miles    : " + str(self.totalMiles)
         return self
 
-    def ride():
+    def ride(self):
         print "Riding ..."
-        totalMiles += 10
+        self.totalMiles += 10
         return self
 
-    def reverse():
+    def reverse(self):
         print "Reversing ..."
-        totalMiles -= 5
+        self.totalMiles -= 5
         return self
 
 ninja = Bike(15000, 240)
 harley = Bike(13500, 160)
 tricycle = Bike(15, 5)
 
-ninja.displayinfo()
+ninja.displayinfo().ride().displayinfo().ride().displayinfo()
+print '>>>>>>>>>>>'
+tricycle.displayinfo().reverse().displayinfo().reverse().displayinfo()
