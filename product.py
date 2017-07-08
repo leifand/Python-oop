@@ -41,6 +41,7 @@ class Product(object):
         print "Status:" + str(self.status)
         return self
 
+'''
 hamburger = Product(8.00, 'Ground Beef', 1.0, 'Kroger', 4.56, 'for sale')
 cheese = Product(2.99, 'American Cheese', 1.0, 'Kraft', 1.03, 'for sale')
 milk = Product(6.00, 'Whole Milk', 3.5, 'Bordens', 3.67, 'for sale')
@@ -54,3 +55,4 @@ milk.displayinfo().sell().displayinfo()
 hamburger.returnProduct('like new').displayinfo()
 cheese.returnProduct('opened').displayinfo()
 milk.returnProduct('defective').displayinfo()
+'''
