@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Spin Move, Traitor, Higher Ground</title>
+    </head>
+    <body>
+        <h3>Victories: {{ session['wincount'] }}</h3>
+        <h3>Defeats: {{ session['losscount'] }}</h3>
+        <h3>Stalemates: {{ session['tiecount'] }}</h3>
+        <h1>- Spin Move - Traitor - Higher Ground -</h1>
+        <img src={{ session['image1'] }}>
+        <img src={{ session['image2'] }}>
+        <p>
+            {{ session['info'] }}
+        </p>
+        <form action='/process_play' method='post'>
+            <input type='submit' value='Spin Move' name='Button'>
+            <input type='submit' value='Traitor' name='Button'>
+            <input type='submit' value='Higher Ground' name='Button'>
+        </form>
+    </body>
+
+</html>
